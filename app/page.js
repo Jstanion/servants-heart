@@ -6,7 +6,7 @@ import SlidingList from "./component/slidingList/SlidingList";
 
 export default function Home() {
   return (
-    <main>
+    <main className="min-h-screen w-full">
       <SlidingList />
       {/* <HeroCommitment />
       <HeroMission />
