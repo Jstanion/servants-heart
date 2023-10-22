@@ -14,18 +14,35 @@ export default function Home() {
             Nourishing Lives, Empowering Communities
           </p>
           <div className="flex">
-            <p className="bg-white opacity-50 text-neutral p-4 mr-2 w-1/2 text-base text-center">
-              Community: We are committed to building a stronger, compassionate
-              community. Family: We are committed to the well-being of every
-              family we serve. Faith: We are committed to faith guiding our
+            <p className="flex flex-col justify-around bg-white opacity-50 text-neutral p-6 mr-2 w-1/2 text-base">
+              <span className="font-bold text-xl">Community:</span> We are committed to building a stronger, compassionate
+              community.
+              <br />
+              <span className="font-bold text-xl">Family:</span> We are committed to the well-being of every
+              family we serve.
+              <br />
+              <span className="font-bold text-xl">Faith:</span> We are committed to faith guiding our
               values and inspiring others to join in our mission.
             </p>
             <HeroCommitment />
           </div>
         </div>
-        <div className="">
-          <HeroMission />
+        <div className="p-4 mt-8 w-5/6 bg-secondary">
+          <div className="flex">
+            <p className="flex flex-col justify-around bg-white opacity-50 text-neutral p-6 mr-2 w-1/2 text-base">
+              <span className="font-bold text-xl"></span> We are committed to building a stronger, compassionate
+              community.
+              <br />
+              <span className="font-bold text-xl">Family:</span> We are committed to the well-being of every
+              family we serve.
+              <br />
+              <span className="font-bold text-xl">Faith:</span> We are committed to faith guiding our
+              values and inspiring others to join in our mission.
+            </p>
+            <HeroMission />
+          </div>
         </div>
+
         <div className="">
           <HeroStory />
         </div>
