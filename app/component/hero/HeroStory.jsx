@@ -2,13 +2,13 @@ import React from "react";
 
 const HeroStory = () => {
   return (
-    <div className="hero min-h-screen">
+    <div className="hero h-fit">
       <video
         autoPlay
         muted
         loop
         playsInline
-        className="w-full h-full px-4 absolute object-cover"
+        className="object-cover"
       >
         <source src="/teamwork.mp4" type="video/mp4" />
         Your browser does not support the video tag.
