@@ -8,7 +8,7 @@ const HeroCommitment = () => {
         muted
         loop
         playsInline
-        className="w-full h-full px-4 absolute object-cover"
+        className="w-3/4 h-full absolute object-fit left-8"
       >
         <source src="/fists-in.mp4" type="video/mp4" />
         Your browser does not support the video tag.
