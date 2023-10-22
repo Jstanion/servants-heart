@@ -7,10 +7,12 @@ import SlidingList from "./component/slidingList/SlidingList";
 export default function Home() {
   return (
     <main className="grid min-h-screen w-full">
-        <SlidingList />
+      <SlidingList />
       <div className="m-4">
         <div className="p-4 w-3/4 bg-info">
-      
+          <p className="bg-white opacity-50 text-neutral p-4 text-4xl text-center">
+            Nourishing Lives, Empowering Communities
+          </p>
           <HeroCommitment />
         </div>
         <div className="">
