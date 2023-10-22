@@ -6,6 +6,9 @@ import HeroCommitment from "./component/hero/HeroCommitment";
 export default function Home() {
   return (
     <main>
+      <HeroCommitment />
+      <HeroMission />
+      <HeroStory />
     </main>
   );
 }
