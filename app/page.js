@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="min-h-screen w-full">
       <SlidingList />
-      <div className="p-4">
+      <div className="pt-4">
         <div className="p-4 w-3/4 bg-info">
           <p className="bg-white opacity-50 text-neutral p-4 mb-2 text-4xl text-center">
             Nourishing Lives, Empowering Communities
