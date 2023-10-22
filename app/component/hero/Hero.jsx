@@ -1,28 +1,32 @@
-import React from 'react'
+import React from "react";
+import Styles from "./Hero.module.css";
 
 const Hero = () => {
-
   return (
-    <div
-        className="hero min-h-screen"
-        style={{
-          backgroundImage: `url(/hero-1.jpg)`,
-        }}
+    <div className="hero min-h-screen">
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className={`${Styles.heroVideo} w-full h-full px-4 absolute object-cover`}
       >
-        <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-            <p className="mb-5">
+        <source src="/hero-clip.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="hero-overlay bg-opacity-60"></div>
+      <div className="hero-content text-center text-neutral-content">
+        <div className="max-w-md">
+          <h1 className="mb-5 text-5xl font-bold">Our Mission</h1>
+          {/* <p className="mb-5">
               Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
-            </p>
-            <button className="btn btn-primary">Get Started</button>
-          </div>
+            </p> */}
         </div>
       </div>
-  )
-}
+    </div>
+  );
+};
 
-export default Hero
+export default Hero;
