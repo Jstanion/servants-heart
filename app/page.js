@@ -1,10 +1,12 @@
 import React from "react";
-import Hero from "./component/hero/Hero";
+import HeroMission from "./component/hero/HeroMission";
+import HeroStory from "./component/hero/HeroStory";
 
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <HeroMission />
+      <HeroStory />
     </main>
   );
 }
