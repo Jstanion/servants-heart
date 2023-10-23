@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { ContactCard } from '../component/contactCard/ContactCard';
 
 const Team = () => {
   return (
-    <div>OurTeam</div>
+    <ContactCard />
   )
 }
 
