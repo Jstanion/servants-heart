@@ -5,7 +5,7 @@ import Styles from "./Navbar.module.css";
 
 const Navbar = () => {
   return (
-    <div className="navbar border-primary border-solid border-2">
+    <div className="navbar p-0 border-primary border-solid border-2">
       <div className="navbar-start">
         <div className="dropdown text-primary">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -57,10 +57,10 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <Image src="/brand-logo.png" width={240} height={50} alt="logo" />
+        <Image src="/brand-logo.png" className="ml-2" width={200} height={50} alt="logo" />
       </div>
-      <div className="navbar hidden lg:flex lg:w-full">
-        <ul className="menu menu-horizontal text-primary px-1 lg:flex lg:justify-evenly lg:w-full">
+      <div className="navbar hidden p-0 lg:flex lg:w-full">
+        <ul className="menu menu-horizontal text-primary p-0 lg:flex lg:justify-evenly lg:w-full">
           <li>
             <Link href="/">Home</Link>
           </li>
