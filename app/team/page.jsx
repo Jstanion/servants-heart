@@ -9,7 +9,7 @@ const Team = () => {
       <div className="bg-secondary w-full my-4">
         <div className="flex flex-col items-start w-full">
           <h1 className="text-4xl text-base-100 mt-8 text-end ml-8">Our Team</h1>
-        <div className="flex flex-wrap justify-evenly w-full my-4">
+        <div className="flex flex-wrap justify-evenly w-full my-16">
           <ContactCard1 />
           <ContactCard2 />
         </div>
