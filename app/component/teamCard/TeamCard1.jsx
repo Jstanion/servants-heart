@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { AiOutlineMail, AiOutlineLinkedin } from "react-icons/ai";
 
-export const ContactCard1 = () => {
+export const TeamCard1 = () => {
   return (
     <div className="card card-compact w-1/3 bg-base-100 shadow-2xl">
       <figure className="w-full h-72 bg-accent relative overflow-visible">
