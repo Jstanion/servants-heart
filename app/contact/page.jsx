@@ -12,7 +12,7 @@ const Contact = () => {
               CONTACT <span className="font-bold">US</span>
             </h1>
           </div>
-          <p className="my-8 text-sm">
+          <p className="my-4 text-sm">
             Thank you for your interest. Our mission is to provide support to
             the community of Lancaster County. Let us know a little more about
             you, or feel free to browse our website to learn more about what we
@@ -25,7 +25,7 @@ const Contact = () => {
             <option className="font-light">Volunteer</option>
             <option className="font-light">Donations</option>
           </select>
-          <p className="my-8 text-sm">
+          <p className="my-4 text-sm">
             Not finding what you’re looking for on our website? Please complete
             the form below. We carefully review all submissions, although we may
             not be able to provide an immediate response. We kindly request your
@@ -36,7 +36,7 @@ const Contact = () => {
       </div>
       <div className="grid grid-cols-2 gap-2 w-1/2">
         <div className="grid gap-2">
-        <Image
+          <Image
             src="/contactW2.jpg"
             alt="Food donations on table"
             width={500}
@@ -52,7 +52,6 @@ const Contact = () => {
           />
         </div>
         <div className="grid gap-2">
-          
           <Image
             src="/contactL1.jpg"
             alt="Food donations on table"

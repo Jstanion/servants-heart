@@ -10,7 +10,7 @@ const HeroCommitment = () => {
           playsInline
           className="object-cover"
         >
-          <source src="/fists-in.mp4" type="video/mp4" />
+          <source src="/heroCommit.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       <div className="hero-overlay bg-opacity-60">
