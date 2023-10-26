@@ -47,7 +47,9 @@ export default function Home() {
           <div className="flex">
             <div className="grid bg-white opacity-50 p-6 mr-2 w-1/3">
               <p className="self-center text-neutral text-lg text-center leading-loose">
-              Support is the heart of our mission. Join us in making a positive impact through volunteering and donations. Together, we can build a stronger, more compassionate community.
+                Support is the heart of our mission. Join us in making a
+                positive impact through volunteering and donations. Together, we
+                can build a stronger, more compassionate community.
               </p>
             </div>
             <HeroStory />

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 
 const ContactForm = () => {
@@ -12,12 +12,12 @@ const ContactForm = () => {
           <input
             type="text"
             placeholder="First"
-            className="input input-bordered input-sm w-full max-w-xs bg-white text-neutral font-light"
+            className="input input-bordered input-sm w-full bg-white text-neutral font-light mr-2"
           />
           <input
             type="text"
             placeholder="Last"
-            className="input input-bordered input-sm w-full max-w-xs bg-white text-neutral font-light"
+            className="input input-bordered input-sm w-full bg-white text-neutral font-light ml-2"
           />
         </div>
       </div>
@@ -31,12 +31,22 @@ const ContactForm = () => {
           className="input input-bordered input-sm w-full bg-white text-neutral font-light"
         />
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col mb-4">
         <label className="label">
-          <span className="label-text text-neutral font-light">Comment or Message</span>
+          <span className="label-text text-neutral font-light">
+            Comment or Message
+          </span>
         </label>
-        <textarea className="textarea textarea-bordered h-24 bg-white text-neutral font-light" placeholder=""></textarea>
+        <textarea
+          className="textarea textarea-bordered h-24 bg-white text-neutral font-light"
+          placeholder=""
+        ></textarea>
       </div>
+      <input
+        type="submit"
+        value="Submit"
+        className="btn btn-outline hover:bg-opacity-40 w-1/3"
+      />
     </div>
   );
 };
