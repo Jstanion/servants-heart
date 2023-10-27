@@ -10,7 +10,7 @@ const HeroStory = () => {
         playsInline
         className="object-cover"
       >
-        <source src="/teamwork.mp4" type="video/mp4" />
+        <source src="/heroOutreach.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="hero-overlay bg-opacity-60"></div>
