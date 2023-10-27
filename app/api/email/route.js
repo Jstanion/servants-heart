@@ -20,5 +20,21 @@ export async function POST(NextRequest) {
   
   const mailOptions = Mail.Options;
 
-  return NextResponse.json('Hello from API!');
+  const sendMailPromise = () =>
+  new Promise ((resolve, reject) => {
+    transport.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        reject(error);
+      } else {
+        resolve(info);
+      }
+    });
+  });
+
+  try {
+    await sendMailPromise();
+    return NextResponse.json({ message: 'Email sent successfully' });
+  } catch (error) {
+    return NextResponse.json({ error }, {status: 500});
+  }
 }
