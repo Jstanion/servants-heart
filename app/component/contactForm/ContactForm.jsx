@@ -3,12 +3,19 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { sendEmail } from "../../utils/sendEmail";
 
-const ContactForm = () => {
-  const { register, handleSubmit, errors } = useForm();
+const formData = {
+  firstName: "",
+  lastName: "",
+  email: "",
+  message: "",
+};
 
-  function onSubmit(data) {
-    sendEmail(data);
-    console.log(data);
+export default function ContactForm() {
+  const { register, handleSubmit, errors } = useForm(formData);
+
+  function onSubmit(formData) {
+    // sendEmail(formData);
+    console.log(formData);
   }
 
   return (
@@ -38,8 +45,8 @@ const ContactForm = () => {
           <span className="label-text text-neutral font-light">Email</span>
         </label>
         <input
-          type="text"
-          placeholder=""
+          type="email"
+          placeholder="example@domain.com"
           className="input input-bordered input-sm w-full bg-white text-neutral font-light"
           {...register("email", { required: true })}
         />
@@ -51,6 +58,7 @@ const ContactForm = () => {
           </span>
         </label>
         <textarea
+          placeholder="Type your message"
           className="textarea textarea-bordered h-24 bg-white text-neutral font-light"
           {...register("message", { required: true })}
         ></textarea>
@@ -62,6 +70,4 @@ const ContactForm = () => {
       />
     </form>
   );
-};
-
-export default ContactForm;
+}
