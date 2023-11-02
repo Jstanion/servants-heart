@@ -14,7 +14,7 @@ export default function ContactForm() {
   const { register, handleSubmit, errors } = useForm(formData);
 
   function onSubmit(formData) {
-    // sendEmail(formData);
+    sendEmail(formData);
     console.log(formData);
   }
 

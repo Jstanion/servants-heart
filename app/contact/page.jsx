@@ -21,8 +21,8 @@ const Contact = () => {
           <select className="select select-bordered select-sm w-full text-neutral font-light bg-white">
             <option className="font-light">Select one...</option>
             <option className="font-light">General Information</option>
-            <option className="font-light">Project/Partnership</option>
-            <option className="font-light">Volunteer</option>
+            <option className="font-light">Sponsor a Family</option>
+            <option className="font-light">Volunteer Opportunities</option>
             <option className="font-light">Donations</option>
           </select>
           <p className="my-4 text-sm">
