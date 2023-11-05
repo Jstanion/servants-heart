@@ -1,6 +1,7 @@
 "use client";
 
-export default function Contact() {
+export default function ContactForm(props) {
+
   async function handleSubmit(e) {
     e.preventDefault();
     const formData = new FormData(e.target);
@@ -35,6 +36,7 @@ export default function Contact() {
           <input
             type="text"
             name="name"
+            required
             placeholder="Name"
             className="input input-bordered input-sm w-full bg-white text-neutral font-light mr-2"
           />
@@ -46,11 +48,17 @@ export default function Contact() {
           <input
             type="email"
             name="email"
+            required
             placeholder="example@domain.com"
             className="input input-bordered input-sm w-full bg-white text-neutral font-light"
           />
         </div>
       </div>
+      <input
+        type="hidden"
+        name="subject"
+        value={`New form submission from A Servant's Heart Website: ${props.subject}`}
+      />
       <div className="flex flex-col mb-4">
         <label htmlFor="message" className="label">
           <span className="label-text text-neutral font-light">
@@ -59,6 +67,7 @@ export default function Contact() {
         </label>
         <textarea
           name="message"
+          required
           placeholder="Type your message"
           className="textarea textarea-bordered h-24 bg-white text-neutral font-light"
         ></textarea>
