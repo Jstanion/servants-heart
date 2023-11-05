@@ -46,7 +46,7 @@ export default function ContactForm(props) {
       <div className="flex justify-between w-full">
         <div className="flex flex-col mb-4 w-2/5">
           <label htmlFor="name" className="label">
-            <span className="label-text text-neutral font-light">Name</span>
+            <span className="label-text text-white font-light">Name</span>
           </label>
           <input
             type="text"
@@ -62,7 +62,7 @@ export default function ContactForm(props) {
         </div>
         <div className="flex flex-col mb-4 w-2/5">
           <label htmlFor="email" className="label">
-            <span className="label-text text-neutral font-light">Email</span>
+            <span className="label-text text-white font-light">Email</span>
           </label>
           <input
             type="email"
@@ -79,7 +79,7 @@ export default function ContactForm(props) {
       </div>
       <div className="flex flex-col mb-4">
         <label htmlFor="subject" className="label">
-          <span className="label-text text-neutral font-light">Subject</span>
+          <span className="label-text text-white font-light">Subject</span>
         </label>
         <select
           value={dropdownSelection}
@@ -100,7 +100,7 @@ export default function ContactForm(props) {
       </div>
       <div className="flex flex-col mb-4">
         <label htmlFor="message" className="label">
-          <span className="label-text text-neutral font-light">
+          <span className="label-text text-white font-light">
             Comment or Message
           </span>
         </label>
@@ -118,7 +118,7 @@ export default function ContactForm(props) {
       <input
         type="submit"
         value="Submit"
-        className="btn btn-outline hover:bg-opacity-40 w-1/3"
+        className="btn btn-outline text-white hover:bg-white hover:bg-opacity-40 w-1/3"
       />
     </form>
   );

@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="flex justify-center items-start w-3/5">
         <section className="flex flex-col justify-center items-center my-4 w-4/5">
           <div className="w-full">
-            <h1 className="text-4xl text-neutral text-start font-extralight">
+            <h1 className="text-4xl text-start font-extralight">
               CONTACT <span className="font-bold">US</span>
             </h1>
           </div>
