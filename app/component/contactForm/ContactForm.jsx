@@ -1,11 +1,18 @@
 "use client";
 
+import React, { useState } from "react";
+
 export default function ContactForm(props) {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [dropdownSelection, setDropdownSelection] = useState("");
+
   async function handleSubmit(e) {
     e.preventDefault();
     const formData = new FormData(e.target);
 
-    formData.append("access_key", "4e413620-682a-4b6a-9949-d049c67ce596");
+    formData.append("access_key", "af4c5bf1-7b35-48ad-a872-8ce8d3802deb");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -22,11 +29,20 @@ export default function ContactForm(props) {
     if (result.success) {
       console.log(result);
       alert("Your email was sent successfully.");
+      setName("");
+      setEmail("");
+      setMessage("");
+      setDropdownSelection("");
     }
   }
 
   return (
-    <form onSubmit={handleSubmit} className="form-control w-full">
+    <form
+      onSubmit={(e) => {
+        handleSubmit(e);
+      }}
+      className="form-control w-full"
+    >
       <div className="flex justify-between w-full">
         <div className="flex flex-col mb-4 w-2/5">
           <label htmlFor="name" className="label">
@@ -35,6 +51,10 @@ export default function ContactForm(props) {
           <input
             type="text"
             name="name"
+            value={name}
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
             required
             placeholder="Name"
             className="input input-bordered input-sm w-full bg-white text-neutral font-light mr-2"
@@ -47,17 +67,37 @@ export default function ContactForm(props) {
           <input
             type="email"
             name="email"
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
             required
             placeholder="example@domain.com"
             className="input input-bordered input-sm w-full bg-white text-neutral font-light"
           />
         </div>
       </div>
-      <input
-        type="hidden"
-        name="subject"
-        value={`New form submission from A Servant's Heart Website: ${props.subject}`}
-      />
+      <div className="flex flex-col mb-4">
+        <label htmlFor="subject" className="label">
+          <span className="label-text text-neutral font-light">Subject</span>
+        </label>
+        <select
+          value={dropdownSelection}
+          onChange={(e) => setDropdownSelection(e.target.value)}
+          className="select select-bordered select-sm w-full text-neutral font-light bg-white"
+        >
+          <option className="font-light">Select one...</option>
+          <option className="font-light">General Information</option>
+          <option className="font-light">Sponsor a Family</option>
+          <option className="font-light">Volunteer Opportunities</option>
+          <option className="font-light">Donations</option>
+        </select>
+        <input
+          type="hidden"
+          name="subject"
+          value={`New form submission from A Servant's Heart Website: ${dropdownSelection}`}
+        />
+      </div>
       <div className="flex flex-col mb-4">
         <label htmlFor="message" className="label">
           <span className="label-text text-neutral font-light">
@@ -66,6 +106,10 @@ export default function ContactForm(props) {
         </label>
         <textarea
           name="message"
+          value={message}
+          onChange={(e) => {
+            setMessage(e.target.value);
+          }}
           required
           placeholder="Type your message"
           className="textarea textarea-bordered h-24 bg-white text-neutral font-light"
@@ -79,75 +123,3 @@ export default function ContactForm(props) {
     </form>
   );
 }
-// import React from "react";
-// import { useForm } from "react-hook-form";
-// import { sendEmail } from "../../utils/sendEmail";
-
-// const formData = {
-//   firstName: "",
-//   lastName: "",
-//   email: "",
-//   message: "",
-// };
-
-// export default function ContactForm() {
-//   const { register, handleSubmit, errors } = useForm(formData);
-
-//   function onSubmit(formData) {
-//     sendEmail(formData);
-//     console.log(formData);
-//   }
-
-//   return (
-//     <form onSubmit={handleSubmit(onSubmit)} className="form-control w-full">
-//       <div className="flex flex-col mb-4">
-//         <label htmlFor="firstName" className="label">
-//           <span className="label-text text-neutral font-light">Name</span>
-//         </label>
-//         <div className="flex justify-between">
-//           <input
-//             type="text"
-//             placeholder="First"
-//             className="input input-bordered input-sm w-full bg-white text-neutral font-light mr-2"
-//             {...register("firstName", { required: true })}
-//           />
-//           <label htmlFor="lastName" className="label"></label>
-//           <input
-//             type="text"
-//             placeholder="Last"
-//             className="input input-bordered input-sm w-full bg-white text-neutral font-light ml-2"
-//             {...register("lastName", { required: true })}
-//           />
-//         </div>
-//       </div>
-//       <div className="flex flex-col mb-4">
-//         <label htmlFor="email" className="label">
-//           <span className="label-text text-neutral font-light">Email</span>
-//         </label>
-//         <input
-//           type="email"
-//           placeholder="example@domain.com"
-//           className="input input-bordered input-sm w-full bg-white text-neutral font-light"
-//           {...register("email", { required: true })}
-//         />
-//       </div>
-//       <div className="flex flex-col mb-4">
-//         <label htmlFor="message" className="label">
-//           <span className="label-text text-neutral font-light">
-//             Comment or Message
-//           </span>
-//         </label>
-//         <textarea
-//           placeholder="Type your message"
-//           className="textarea textarea-bordered h-24 bg-white text-neutral font-light"
-//           {...register("message", { required: true })}
-//         ></textarea>
-//       </div>
-//       <input
-//         type="submit"
-//         value="Submit"
-//         className="btn btn-outline hover:bg-opacity-40 w-1/3"
-//       />
-//     </form>
-//   );
-// }

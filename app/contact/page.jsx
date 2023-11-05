@@ -1,18 +1,8 @@
-"use client";
-
-import React, { useState } from "react";
+import React from "react";
 import ContactForm from "../component/contactForm/ContactForm";
 import Image from "next/image";
 
 const Contact = () => {
-  const [dropdownSelection, setDropdownSelection] = useState("");
-
-  function handleDropdown(e) {
-    e.preventDefault();
-    const selectedValue = e.target.value;
-    setDropdownSelection(selectedValue);
-  }
-
   return (
     <div className="flex w-full h-full my-4 p-4 bg-accent">
       <div className="flex justify-center items-start w-3/5">
@@ -28,18 +18,6 @@ const Contact = () => {
             you, or feel free to browse our website to learn more about what we
             do, and how you might be able to join the outreach!
           </p>
-          <select
-            onClick={handleDropdown}
-            className="select select-bordered select-sm w-full text-neutral font-light bg-white"
-          >
-            <option selected disabled className="font-light">
-              Select one...
-            </option>
-            <option className="font-light">General Information</option>
-            <option className="font-light">Sponsor a Family</option>
-            <option className="font-light">Volunteer Opportunities</option>
-            <option className="font-light">Donations</option>
-          </select>
           <p className="my-4 text-sm">
             Not finding what you&apos;re looking for on our website? Please
             complete the form below. We carefully review all submissions,
@@ -47,7 +25,7 @@ const Contact = () => {
             kindly request your patience as we aim to personally address each
             one.
           </p>
-          <ContactForm subject={dropdownSelection} />
+          <ContactForm />
         </section>
       </div>
       <div className="flex flex-wrap justify-center items-start w-2/5 h-fit mt-4">
