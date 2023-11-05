@@ -1,7 +1,6 @@
 "use client";
 
 export default function ContactForm(props) {
-
   async function handleSubmit(e) {
     e.preventDefault();
     const formData = new FormData(e.target);

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useState } from "react";
 import ContactForm from "../component/contactForm/ContactForm";
@@ -9,7 +9,7 @@ const Contact = () => {
 
   function handleDropdown(e) {
     e.preventDefault();
-    const selectedValue  = e.target.value
+    const selectedValue = e.target.value;
     setDropdownSelection(selectedValue);
   }
 
@@ -28,10 +28,13 @@ const Contact = () => {
             you, or feel free to browse our website to learn more about what we
             do, and how you might be able to join the outreach!
           </p>
-          <select 
-          onClick={handleDropdown}
-          className="select select-bordered select-sm w-full text-neutral font-light bg-white">
-            <option selected disabled className="font-light">Select one...</option>
+          <select
+            onClick={handleDropdown}
+            className="select select-bordered select-sm w-full text-neutral font-light bg-white"
+          >
+            <option selected disabled className="font-light">
+              Select one...
+            </option>
             <option className="font-light">General Information</option>
             <option className="font-light">Sponsor a Family</option>
             <option className="font-light">Volunteer Opportunities</option>
@@ -71,6 +74,7 @@ const Contact = () => {
             width={250}
             height={250}
             className="p-1"
+            priority
           />
           <Image
             src="/contactW1.jpg"
