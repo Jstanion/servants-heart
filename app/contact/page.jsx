@@ -18,13 +18,6 @@ const Contact = () => {
             you, or feel free to browse our website to learn more about what we
             do, and how you might be able to join the outreach!
           </p>
-          <select className="select select-bordered select-sm w-full text-neutral font-light bg-white">
-            <option className="font-light">Select one...</option>
-            <option className="font-light">General Information</option>
-            <option className="font-light">Project/Partnership</option>
-            <option className="font-light">Volunteer</option>
-            <option className="font-light">Donations</option>
-          </select>
           <p className="my-4 text-sm">
             Not finding what you&apos;re looking for on our website? Please
             complete the form below. We carefully review all submissions,
@@ -59,6 +52,7 @@ const Contact = () => {
             width={250}
             height={250}
             className="p-1"
+            priority
           />
           <Image
             src="/contactW1.jpg"
