@@ -35,29 +35,27 @@ const Navbar = () => {
               <Link href="/contact">Contact</Link>
             </li>
             <li>
-              <Link href="/news">
-                News
-              </Link>
+              <Link href="/news">News</Link>
             </li>
+            {/* <li>
+              <Link href="/events">Events</Link>
+            </li> */}
             <li>
-              <Link href="/events">
-                Events
-              </Link>
-            </li>
-            <li>
-              <Link href="/team">
-                Our Team
-              </Link>
+              <Link href="/team">The Team</Link>
             </li>
             <div className="divider m-0 justify-self-center w-11/12 "></div>
             <li>
-              <Link href="/donate">
-                Donate
-              </Link>
+              <Link href="/donate">Donate</Link>
             </li>
           </ul>
         </div>
-        <Image src="/brand-logo.png" className="ml-2" width={200} height={50} alt="logo" />
+        <Image
+          src="/logo.png"
+          className="ml-2"
+          width={200}
+          height={50}
+          alt="logo"
+        />
       </div>
       <div className="navbar hidden p-0 lg:flex lg:w-full">
         <ul className="menu menu-horizontal text-primary p-0 lg:flex lg:justify-evenly lg:w-full">
@@ -68,13 +66,13 @@ const Navbar = () => {
             <Link href="/contact">Contact</Link>
           </li>
           <li>
-            <Link href="/news">News</Link>
+            <Link href="/news">Our Story</Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/events">Events</Link>
-          </li>
+          </li> */}
           <li>
-            <Link href="/team">Our Team</Link>
+            <Link href="/team">The Team</Link>
           </li>
           <div className="divider lg:divider-horizontal"></div>
           <li>
