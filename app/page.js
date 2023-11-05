@@ -10,9 +10,12 @@ export default function Home() {
       <SlidingList />
       <div className="pt-4 pr-4">
         <div className="p-4 w-5/6 bg-info">
-          <p className="bg-white opacity-50 text-neutral p-4 mb-2 text-4xl text-center">
-            Nourishing Lives, Empowering Communities
-          </p>
+          <h1 className="text-neutral p-4 mb-2 text-4xl text-center border-2 border-white border-opacity-50">
+            <span className="font-extralight">Nourishing </span>
+            <span className="font-bold">Lives, </span>
+            <span className="font-extralight">Empowering </span>
+            <span className="font-bold">Communities</span>
+          </h1>
           <div className="flex">
             <p className="flex flex-col justify-around bg-white opacity-50 text-neutral p-6 mr-2 w-1/2 text-lg">
               <span className="font-bold text-xl">Family:</span> We are
