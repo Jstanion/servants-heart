@@ -1,9 +1,10 @@
 import React from "react";
+import Image from "next/image";
 
 const OurStory = () => {
   return (
     <div className="flex w-full h-full my-4 p-4 bg-info">
-      <div className="flex justify-center">
+      <div className="flex justify-center items-start w-3/5">
         <section className="flex flex-col justify-center items-center my-4 w-4/5">
           <div className="w-full">
             <h1 className="text-4xl text-start font-extralight">
@@ -23,9 +24,9 @@ const OurStory = () => {
           </p>
           <p className="my-4 text-lg">
             In our close-knit community, we&apos;ve all felt the impact of unmet
-            needs. Rebecca and Gina, the dynamic duo behind A Servant&apos;s Heart,
-            saw an opportunity to make a difference when they learned about the
-            pressing need for food within our neighborhoods. Being a
+            needs. Rebecca and Gina, the dynamic duo behind A Servant&apos;s
+            Heart, saw an opportunity to make a difference when they learned
+            about the pressing need for food within our neighborhoods. Being a
             grassroots, self-funded endeavor, they took the first steps by
             reaching out to families and local organizations that could use a
             little extra support.
@@ -43,10 +44,10 @@ const OurStory = () => {
             and support to fellow Lancaster residents.
           </p>
           <p className="my-4 text-lg">
-            But it&apos;s not just about the tangible goods; it&apos;s about offering a
-            helping hand and heartfelt prayers. If you or someone you know needs
-            food or a moment of prayer, we&apos;re here with open arms and no
-            judgments.
+            But it&apos;s not just about the tangible goods; it&apos;s about
+            offering a helping hand and heartfelt prayers. If you or someone you
+            know needs food or a moment of prayer, we&apos;re here with open
+            arms and no judgments.
           </p>
           <p className="my-4 text-lg">
             If the spirit of community service resonates with you, we warmly
@@ -57,10 +58,52 @@ const OurStory = () => {
           </p>
         </section>
       </div>
-      {/* <div className="flex flex-wrap justify-center items-start w-2/5 h-fit mt-4">
-        <div className="flex flex-col flex-wrap"></div>
-        <div className="flex flex-col flex-wrap"></div>
-      </div> */}
+      <div className="flex flex-col justify-center items-center h-fit my-4 mr-24">
+          <Image 
+            src="/story1.jpg"
+            alt="Food donations on table"
+            width={400}
+            height={400}
+            className="w-fit p-1"
+          />
+          <div className="flex justify-between w-full my-4">
+          <Image 
+          src="/story2.jpg"
+          alt="Food donations on table"
+          width={100}
+          height={400}
+          className="w-fit p-1"
+          />
+          <Image 
+          src="/story3.jpg"
+          alt="Food donations on table"
+          width={100}
+          height={400}
+          className="w-fit p-1"
+          />
+          <Image 
+          src="/story4.jpg"
+          alt="Food donations on table"
+          width={100}
+          height={400}
+          className="w-fit p-1"
+          />
+          <Image 
+          src="/story5.jpg"
+          alt="Food donations on table"
+          width={100}
+          height={400}
+          className="w-fit p-1"
+          />
+          </div>
+          <Image 
+            src="/story6.jpg"
+            alt="Food donations on table"
+            width={400}
+            height={400}
+            className="w-fit p-1"
+          />
+      </div>
     </div>
   );
 };
