@@ -66,11 +66,8 @@ const Navbar = () => {
             <Link href="/contact">Contact</Link>
           </li>
           <li>
-            <Link href="/news">Our Story</Link>
+            <Link href="/ourstory">Our Story</Link>
           </li>
-          {/* <li>
-            <Link href="/events">Events</Link>
-          </li> */}
           <li>
             <Link href="/team">The Team</Link>
           </li>

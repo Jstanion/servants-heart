@@ -6,4 +6,4 @@ const OurStory = () => {
   )
 }
 
-export default News
+export default OurStory
