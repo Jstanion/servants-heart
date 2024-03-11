@@ -63,16 +63,13 @@ const Navbar = () => {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="/story">Our Story</Link>
           </li>
-          <li>
-            <Link href="/news">Our Story</Link>
-          </li>
-          {/* <li>
-            <Link href="/events">Events</Link>
-          </li> */}
           <li>
             <Link href="/team">The Team</Link>
+          </li>
+          <li>
+            <Link href="/contact">Contact</Link>
           </li>
           <div className="divider lg:divider-horizontal"></div>
           <li>
