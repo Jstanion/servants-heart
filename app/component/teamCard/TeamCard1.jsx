@@ -4,8 +4,8 @@ import { AiOutlineMail, AiOutlineLinkedin } from "react-icons/ai";
 
 export const TeamCard1 = () => {
   return (
-    <div className="card card-compact w-1/3 bg-base-100 shadow-2xl">
-      <figure className="w-full h-72 bg-accent relative overflow-visible">
+    <div className="card card-compact bg-base-100 shadow-2xl">
+      <figure className="w-full h-72 bg-accent p-36 relative overflow-visible">
         <Image
           className="absolute inset bottom-0"
           src="/sample-hs1.png"
