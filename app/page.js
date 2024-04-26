@@ -32,10 +32,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="p-4 mt-8 w-5/6 h-2/3 bg-secondary">
-          <div className="flex">
+        <div className="p-4 mt-8 lg:w-5/6 h-2/3 bg-secondary">
+          <div className="flex flex-col lg:flex-row">
             <HeroMission />
-            <div className="grid bg-white opacity-50 p-6 ml-2 w-1/3">
+            <div className="grid bg-white opacity-50 p-6 lg:ml-2 lg:w-1/3">
               <p className="self-center text-neutral text-lg text-center leading-loose">
                 A Servant&apos;s Heart Community Outreach is committed to serve
                 the needs of the community while walking in love without

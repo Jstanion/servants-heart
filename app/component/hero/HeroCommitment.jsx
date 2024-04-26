@@ -17,7 +17,7 @@ const HeroCommitment = () => {
       </div>
       <div className="hero-content text-center text-info">
         <div className="max-w-md">
-          <h1 className="mb-5 text-3xl lg:text-5xl font-bold">Our Commitment</h1>
+          <h1 className="mb-5 text-4xl lg:text-5xl font-bold">Our Commitment</h1>
         </div>
       </div>
     </div>
