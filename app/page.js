@@ -7,9 +7,9 @@ import SlidingList from "./component/slidingList/SlidingList";
 export default function Home() {
   return (
     <main className="min-h-screen w-full">
-      {/* <SlidingList /> */}
-      <div className="pt-4 lg:pr-4">
-        <div className="p-4 lg:w-5/6 bg-info">
+      <SlidingList className="object-hidden" />
+      <div className="pt-4 md:pr-4">
+        <div className="p-4 md:w-5/6 bg-info">
           <h1 className="text-white lg:p-4 mb-2 lg:text-4xl text-center border-2 border-white border-opacity-50">
             <span className="font-extralight">Nourishing </span>
             <span className="font-bold">Lives, </span>
@@ -32,7 +32,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="p-4 mt-8 lg:w-5/6 h-2/3 bg-secondary">
+        <div className="p-4 mt-8 md:w-5/6 h-2/3 bg-secondary">
           <div className="flex flex-col lg:flex-row">
             <HeroMission />
             <div className="grid bg-white opacity-50 p-6 lg:ml-2 lg:w-1/3">
@@ -46,7 +46,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="p-4 my-6 lg:w-5/6 h-2/3 bg-accent">
+        <div className="p-4 my-6 md:w-5/6 h-2/3 bg-accent">
           <div className="flex flex-col-reverse lg:flex-row">
             <div className="grid bg-white opacity-50 p-6 lg:mr-2 lg:w-1/3">
               <p className="self-center text-neutral lg:text-xl text-center leading-loose">
