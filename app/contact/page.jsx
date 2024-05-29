@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <div className="flex w-full h-full my-4 p-4 bg-accent">
-      <div className="flex justify-center items-start w-3/5">
+    <div className="flex flex-col lg:flex-row w-full h-full my-4 p-4 bg-accent">
+      <div className="flex justify-center items-start lg:w-3/5">
         <section className="flex flex-col justify-center items-center my-4 w-4/5">
           <div className="w-full">
             <h1 className="text-4xl text-start font-extralight">
@@ -28,7 +28,7 @@ const Contact = () => {
           <ContactForm />
         </section>
       </div>
-      <div className="flex flex-wrap justify-center items-start w-2/5 h-fit mt-4">
+      <div className="flex lg:flex-wrap justify-center items-start lg:w-2/5 h-fit mt-4">
         <div className="flex flex-col flex-wrap">
           <Image
             src="/contactW2.jpg"
