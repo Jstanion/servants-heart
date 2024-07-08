@@ -11,7 +11,7 @@ const Team = () => {
             MEET <span className="text-lg align-middle">THE</span>{" "}
             <span className="font-bold">TEAM</span>
           </h1>
-          <div className="flex flex-wrap justify-evenly items-center  w-full my-4">
+          <div className="flex flex-wrap justify-center items-center w-full my-4">
             <TeamCard1 />
             <TeamCard2 />
           </div>
