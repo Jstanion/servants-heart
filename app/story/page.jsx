@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const OurStory = () => {
   return (
-    <div className="flex w-full h-full my-4 p-4 bg-info">
-      <div className="flex justify-center items-start w-3/5">
-        <section className="flex flex-col justify-center items-center my-4 w-4/5">
+    <div className="flex flex-col lg:flex-row w-full h-full my-4 p-4 bg-info">
+      <div className="flex justify-center items-start lg:w-3/5">
+        <section className="flex flex-col justify-center items-center my-4 lg:w-4/5">
           <div className="w-full">
             <h1 className="text-4xl text-start font-extralight">
               OUR <span className="font-bold">STORY</span>
@@ -58,51 +58,51 @@ const OurStory = () => {
           </p>
         </section>
       </div>
-      <div className="flex flex-col justify-center items-center h-fit my-4 mr-24">
-          <Image 
-            src="/story1.jpg"
+      <div className="flex flex-col justify-center items-center h-fit my-4 lg:mr-24">
+        <Image
+          src="/story1.jpg"
+          alt="Food donations on table"
+          width={400}
+          height={400}
+          className="w-fit p-1"
+        />
+        <div className="flex flex-wrap justify-between mx-3 my-4">
+          <Image
+            src="/story2.jpg"
             alt="Food donations on table"
-            width={400}
+            width={100}
             height={400}
             className="w-fit p-1"
           />
-          <div className="flex justify-between w-full my-4">
-          <Image 
-          src="/story2.jpg"
-          alt="Food donations on table"
-          width={100}
-          height={400}
-          className="w-fit p-1"
-          />
-          <Image 
-          src="/story3.jpg"
-          alt="Food donations on table"
-          width={100}
-          height={400}
-          className="w-fit p-1"
-          />
-          <Image 
-          src="/story4.jpg"
-          alt="Food donations on table"
-          width={100}
-          height={400}
-          className="w-fit p-1"
-          />
-          <Image 
-          src="/story5.jpg"
-          alt="Food donations on table"
-          width={100}
-          height={400}
-          className="w-fit p-1"
-          />
-          </div>
-          <Image 
-            src="/story6.jpg"
+          <Image
+            src="/story3.jpg"
             alt="Food donations on table"
-            width={400}
+            width={100}
             height={400}
             className="w-fit p-1"
           />
+          <Image
+            src="/story4.jpg"
+            alt="Food donations on table"
+            width={100}
+            height={400}
+            className="w-fit p-1"
+          />
+          <Image
+            src="/story5.jpg"
+            alt="Food donations on table"
+            width={100}
+            height={400}
+            className="w-fit p-1"
+          />
+        </div>
+        <Image
+          src="/story6.jpg"
+          alt="Food donations on table"
+          width={400}
+          height={400}
+          className="w-fit p-1"
+        />
       </div>
     </div>
   );
