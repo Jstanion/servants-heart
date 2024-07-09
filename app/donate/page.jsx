@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const Donate = () => {
   return (
-    <div className="flex w-full h-full my-4 p-4 bg-primary">
-      <div className="flex justify-center items-start w-3/5">
-        <section className="flex flex-col justify-center items-center my-4 w-4/5">
+    <div className="flex flex-col lg:flex-row w-full h-full my-4 p-4 bg-primary">
+      <div className="flex justify-center items-start lg:w-3/5">
+        <section className="flex flex-col justify-center items-center my-4 lg:w-4/5">
           <div className="w-full">
             <h1 className="text-4xl text-start font-extralight">
               YOUR <span className="font-bold">DONATIONS</span>
@@ -52,43 +52,43 @@ const Donate = () => {
           </p>
         </section>
       </div>
-      <div className="flex flex-wrap justify-center items-start w-2/5 h-fit mt-4">
-        <div className="flex flex-col items-center flex-wrap w-full">
+      <div className="flex justify-center lg:w-3/5 h-fit lg:my-4">
+        <div className="flex justify-center lg:justify-evenly items-center flex-wrap lg:w-4/5 p-1 border-white border-2">
           <a href="https://www.paypal.com/">
             <Image
               src="/paypal.png"
               alt="Food donations on table"
-              width={150}
+              width={100}
               height={200}
-              className="h-fit my-5"
+              className="h-fit m-4"
             />
           </a>
           <a href="https://www.stripe.com/">
             <Image
               src="/stripe.png"
               alt="Food donations on table"
-              width={150}
+              width={100}
               height={200}
-              className="h-fit my-5"
+              className="h-fit m-4"
             />
           </a>
           <a href="https://www.square.com/">
             <Image
               src="/square.png"
               alt="Food donations on table"
-              width={150}
+              width={100}
               height={200}
-              className="h-fit my-5"
+              className="h-fit m-4"
             />
           </a>
-          <p className="my-4 text-lg">
-            Donations by check can be made payable to A Servant&apos;s Heart and
+          <p className="my-4 text-center text-lg">
+            Donations by check can be made payable to <span className="font-bold">A Servant&apos;s Heart</span> and
             mailed to:
           </p>
           <p className="w-full text-3xl text-center">
-            123 Resident Ave
+            PO Box 5342
             <br />
-            Lancaster, PA 17601
+            Lancaster, PA 17606
           </p>
         </div>
       </div>
