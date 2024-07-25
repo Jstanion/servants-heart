@@ -63,7 +63,7 @@ const Donate = () => {
               className="h-fit m-4"
             />
           </a>
-          <a href="https://www.stripe.com/">
+          {/* <a href="https://www.stripe.com/">
             <Image
               src="/stripe.png"
               alt="Food donations on table"
@@ -80,10 +80,11 @@ const Donate = () => {
               height={200}
               className="h-fit m-4"
             />
-          </a>
+          </a> */}
           <p className="my-4 text-center text-lg">
-            Donations by check can be made payable to <span className="font-bold">A Servant&apos;s Heart</span> and
-            mailed to:
+            Donations by check can be made payable to{" "}
+            <span className="font-bold">A Servant&apos;s Heart</span>.<br></br>
+            We also accept gift cards! <br></br>Please mail to:
           </p>
           <p className="w-full text-3xl text-center">
             PO Box 5342
