@@ -7,7 +7,11 @@ import SlidingList from "./component/slidingList/SlidingList";
 export default function Home() {
   return (
     <main className="min-h-screen w-full">
-      <SlidingList className="object-hidden" />
+      <div className="hidden md:block sticky top-0 bottom-0">
+        <div className="absolute bg-primary right-0 w-1/6 my-4">
+          <SlidingList />
+        </div>
+      </div>
       <div className="pt-4 md:pr-4">
         <div className="p-4 md:w-5/6 bg-info">
           <h1 className="text-white lg:p-4 mb-2 lg:text-4xl text-center border-2 border-white border-opacity-50">
@@ -18,15 +22,17 @@ export default function Home() {
           </h1>
           <div className="flex flex-col-reverse lg:flex-row">
             <p className="flex flex-col justify-around bg-white opacity-50 text-neutral p-6 lg:mr-2 lg:w-1/2 lg:text-lg">
-              <span className="font-bold text-xl lg:text-5xl">Family</span> We are
-              committed to the well-being of every family we serve.
+              <span className="font-bold text-xl lg:text-5xl">Family</span> We
+              are committed to the well-being of every family we serve.
               <br />
-              <span className="font-bold text-xl lg:text-5xl">Community</span> We are
-              committed to building a stronger, compassionate community.
+              <span className="font-bold text-xl lg:text-5xl">
+                Community
+              </span>{" "}
+              We are committed to building a stronger, compassionate community.
               <br />
-              <span className="font-bold text-xl lg:text-5xl">Faith</span> We are committed
-              to faith guiding our values and inspiring others to join in our
-              mission.
+              <span className="font-bold text-xl lg:text-5xl">Faith</span> We
+              are committed to faith guiding our values and inspiring others to
+              join in our mission.
             </p>
             <HeroCommitment />
           </div>
