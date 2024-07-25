@@ -8,7 +8,7 @@ export const TeamCard2 = () => {
       <figure className="h-72 p-36 relative overflow-visible bg-primary">
         <Image
           className="absolute inset bottom-0"
-          src="/sample-hs2.png"
+          src="/rebecca.jpeg"
           alt="Picture of the CEO / Founder"
           width={250}
           height={200}
