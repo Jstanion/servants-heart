@@ -16,7 +16,7 @@ export const TeamCard2 = () => {
       </figure>
       <div className="card-body text-secondary">
         <h2 className="card-title">Rebecca Stanion</h2>
-        <p>Founder / CEO</p>
+        <p>Co-Founder / CEO</p>
         <div className="flex justify-between w-1/5">
           <a href="mailto:rebecca@aservantsheartco.com">
             <AiOutlineMail className="text-2xl" />
