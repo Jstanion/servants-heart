@@ -8,7 +8,7 @@ export const TeamCard1 = () => {
       <figure className="h-72 p-36 relative overflow-visible bg-accent">
         <Image
           className="absolute inset bottom-0 rounded-t-xl"
-          src="/gina.jpeg"
+          src="/gina.png"
           alt="Picture of the Founder"
           width={250}
           height={200}
