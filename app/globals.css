@@ -1,3 +1,4 @@
+@import 'normalize.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,11 +16,4 @@
 body {
   color: rgb(var(--foreground-rgb));
   padding: 1rem;
-}
-
-/* Safari-specific styles */
-@supports (-webkit-overflow-scrolling: touch) {
-  .video-element {
-    height: auto;
-  }
 }
