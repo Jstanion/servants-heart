@@ -8,12 +8,11 @@ const HeroStory = () => {
         muted
         loop
         playsInline
-        className="object-cover"
+        className="object-cover opacity-60"
       >
         <source src="/heroOutreach.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-accent">
         <div className="max-w-md">
           <h1 className="mb-5 text-3xl lg:text-5xl font-bold">#JoinTheOutreach</h1>

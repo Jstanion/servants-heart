@@ -8,12 +8,11 @@ const HeroCommitment = () => {
         muted
         loop
         playsInline
-        className="video-element object-cover"
+        className="object-cover opacity-60"
       >
         <source src="/heroCommit.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-info">
         <div className="max-w-md">
           <h1 className="mb-5 text-4xl lg:text-5xl font-bold">
