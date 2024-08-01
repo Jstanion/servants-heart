@@ -17,4 +17,9 @@ body {
   padding: 1rem;
 }
 
-
+/* Safari-specific styles */
+@supports (-webkit-overflow-scrolling: touch) {
+  .video-element {
+    height: auto;
+  }
+}
