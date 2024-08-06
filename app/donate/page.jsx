@@ -54,15 +54,32 @@ const Donate = () => {
       </div>
       <div className="flex justify-center lg:w-3/5 h-fit lg:my-4">
         <div className="flex justify-center lg:justify-evenly items-center flex-wrap lg:w-4/5 p-1 border-white border-2">
-          <a href="https://www.paypal.com/">
-            <Image
-              src="/paypal.png"
-              alt="Food donations on table"
-              width={100}
-              height={200}
-              className="h-fit m-4"
+          <form className="my-4"
+            action="https://www.paypal.com/donate"
+            method="post"
+            target="_top"
+          >
+            <input
+              type="hidden"
+              name="hosted_button_id"
+              value="735UPRYZELUHU"
             />
-          </a>
+            <input
+              type="image"
+              src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+              border="0"
+              name="submit"
+              title="PayPal - The safer, easier way to pay online!"
+              alt="Donate with PayPal button"
+            />
+            <img
+              alt=""
+              border="0"
+              src="https://www.paypal.com/en_US/i/scr/pixel.gif"
+              width="1"
+              height="1"
+            />
+          </form>
           {/* <a href="https://www.stripe.com/">
             <Image
               src="/stripe.png"
@@ -84,13 +101,14 @@ const Donate = () => {
           <p className="my-4 text-center text-lg">
             Donations by check can be made payable to{" "}
             <span className="font-bold">A Servant&apos;s Heart</span>.<br></br>
-            We also accept gift cards! <br></br>Please mail to:
+            Please mail to:
           </p>
           <p className="w-full text-3xl text-center">
             PO Box 5342
             <br />
             Lancaster, PA 17606
           </p>
+          <p className="my-4 text-center text-xl">We also accept gift cards!</p>
         </div>
       </div>
     </div>
